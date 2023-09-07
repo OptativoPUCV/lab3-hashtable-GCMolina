@@ -86,7 +86,7 @@ void eraseMap(HashMap * map,  char * key) {
     Pair* aux = map->buckets[posicion];
     if(is_equal(aux->key,key)){
       aux->key=NULL;
-      map->size--
+      map->size--;
       return;
     }
     posicion=(posicion+1)%map->capacity;
