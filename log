@@ -90,3 +90,16 @@ Thu 07 Sep 2023 11:08:13 PM UTC:
  tests:  11|2
 total_score: 50/70
 31ca9ef
+Thu 07 Sep 2023 11:09:02 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:89:18: error: expected ‘;’ before ‘return’
+   89 |       map->size--
+      |                  ^
+      |                  ;
+   90 |       return;
+      |       ~~~~~~      
+Compilation failed
+61bc666
