@@ -84,3 +84,9 @@ hashmap.c:92:15: error: ‘pocision’ undeclared (first use in this function); 
 hashmap.c:92:15: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 7cab000
+Thu 07 Sep 2023 11:08:13 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|2
+total_score: 50/70
+31ca9ef
