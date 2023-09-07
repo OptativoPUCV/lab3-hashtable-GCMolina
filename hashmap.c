@@ -89,7 +89,7 @@ void eraseMap(HashMap * map,  char * key) {
       map->size--;
       return;
     }
-    posicion=(poscinion+1)%map->capacity;
+    posicion=(pocision+1)%map->capacity;
     if(posicion==map->current){
       break;
     }
