@@ -60,3 +60,15 @@ hashmap.c:92:16: error: ‘poscinion’ undeclared (first use in this function);
       |                posicion
 Compilation failed
 5a42773
+Thu 07 Sep 2023 11:07:57 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:92:15: error: ‘poscinion’ undeclared (first use in this function); did you mean ‘posicion’?
+   92 |     posicion=(poscinion+1)%map->capacity;
+      |               ^~~~~~~~~
+      |               posicion
+hashmap.c:92:15: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+a64d944
