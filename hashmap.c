@@ -4,6 +4,7 @@
 #include <math.h>
 #include <ctype.h>
 #include "hashmap.h"
+#include <stdbool.h>
 
 
 typedef struct HashMap HashMap;
@@ -40,8 +41,24 @@ int is_equal(void* key1, void* key2){
 
 
 void insertMap(HashMap * map, char * key, void * value) {
+    long posicion= hash(key , map->capacity);
+    Pair* aux0= map->buckets[posicion];
+    while(true){
+    if((aux0==NULL) || (aux0 -> key==NULL)){
+      Pair* data = createPair(key, value);
+      map->buckets[posicion]=data;
+      map->current = posicion;
+      map->size++;
+      return;
+      
+    }
+      posicion=(posicion+1)%map->capacity;
+      aux0 = map->buckets[posicion];
+  }
+  
+  
 
-
+  map->current = posicion;
 }
 
 void enlarge(HashMap * map) {
@@ -60,8 +77,7 @@ HashMap * createMap(long capacity) {
   return map;
 }
 
-void eraseMap(HashMap * map,  char * key) {    
-
+void eraseMap(HashMap * map,  char * key) {
 
 }
 
