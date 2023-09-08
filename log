@@ -109,3 +109,24 @@ Thu 07 Sep 2023 11:09:07 PM UTC:
  tests:  11|2
 total_score: 50/70
 ce6cdfa
+Fri 08 Sep 2023 11:45:36 PM UTC: 
+ hashmap.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:124:42: error: ‘*map->buckets’ is a pointer; did you mean to use ‘->’?
+  124 |     if(map->buckets!=NULL && map->buckets->key){
+      |                                          ^~
+      |                                          ->
+hashmap.c:125:7: error: statement with no effect [-Werror=unused-value]
+  125 |       map
+      |       ^~~
+hashmap.c:125:10: error: expected ‘;’ before ‘}’ token
+  125 |       map
+      |          ^
+      |          ;
+  126 |     }
+      |     ~     
+cc1: all warnings being treated as errors
+Compilation failed
+eb97106
