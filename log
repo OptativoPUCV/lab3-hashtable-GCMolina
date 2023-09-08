@@ -130,3 +130,20 @@ hashmap.c:125:10: error: expected ‘;’ before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 eb97106
+Fri 08 Sep 2023 11:47:47 PM UTC: 
+ hashmap.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:124:42: error: ‘*map->buckets’ is a pointer; did you mean to use ‘->’?
+  124 |     if(map->buckets!=NULL && map->buckets->key!=NULL){
+      |                                          ^~
+      |                                          ->
+hashmap.c:126:29: error: expected ‘;’ before ‘}’ token
+  126 |       return map->buckets[i]
+      |                             ^
+      |                             ;
+  127 |     }
+      |     ~                        
+Compilation failed
+c46ba57
