@@ -322,3 +322,9 @@ hashmap.c:72:54: error: ‘*old_buckets’ is a pointer; did you mean to use ‘
       |                                                      ->
 Compilation failed
 90a40c2
+Sat 09 Sep 2023 12:28:56 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  17|0
+total_score: 70/70
+78c0712
