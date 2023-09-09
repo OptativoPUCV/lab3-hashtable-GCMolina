@@ -231,3 +231,16 @@ hashmap.c:136:17: error: returning ‘Pair **’ from a function with incompatib
 cc1: all warnings being treated as errors
 Compilation failed
 f97693a
+Sat 09 Sep 2023 12:07:12 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:136:29: error: expected ‘;’ before ‘}’ token
+  136 |       return map->buckets[i]
+      |                             ^
+      |                             ;
+  137 |     }
+      |     ~                        
+Compilation failed
+9493455
