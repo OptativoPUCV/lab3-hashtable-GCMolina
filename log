@@ -268,3 +268,14 @@ hashmap.c:66:12: error: unused variable ‘old_buckets’ [-Werror=unused-variab
 cc1: all warnings being treated as errors
 Compilation failed
 eeab70d
+Sat 09 Sep 2023 12:14:29 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:66:12: error: unused variable ‘old_buckets’ [-Werror=unused-variable]
+   66 |     Pair** old_buckets = map->buckets;
+      |            ^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+fb89046
